@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <!-- Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "flex-container">
+        <header class = "header">Weather Dashboard</header>
+        <aside class = "aside">
+            <h1>Search for a city:</h1>
+            <form id="search-form">
+                <input id = "search-input" class = "form-input" type="text" placeholder="Enter City Name!">
+                <button class="btn">Search</button>
+            </form>
+            
+        </aside>
+        <article class = 'results'>
+            <!-- results will go here... -->
+            <div id ='result-content'> 
+            </div>
+            <h2>5-Day Forecast</h2>
+            <div id ='forecast-content' class="forecast-content">
+            </div>
+        </article>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
