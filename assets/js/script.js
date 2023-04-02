@@ -56,7 +56,7 @@ function printWeather(resultObj){
 
 // weather forecast call
 function searchAPI(city){
-    var queryURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&appid=" + APIKey+ '&units=imperial';
+    var queryURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + "&appid=" + APIKey+ '&units=imperial';
     fetch(queryURL)
     .then(function(response){
         if(!response.ok){
@@ -124,7 +124,7 @@ function printForecast(resultObj){
 
 // 5 day forecast call
 function searchForecast(city){
-    var queryURL = 'http://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid='+APIKey+'&units=imperial';
+    var queryURL = 'https://api.openweathermap.org/data/2.5/forecast?q='+city+'&appid='+APIKey+'&units=imperial';
     fetch(queryURL)
     .then(function(response){
         if(!response.ok){
