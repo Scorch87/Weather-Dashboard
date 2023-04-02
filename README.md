@@ -10,5 +10,5 @@ The Weather Dashboard is a web application that will show the user today's weath
 - Manipulate JSON response objects.
 
 ## Future Development:
--Bugfix: currently the page must be reloaded before searching for a new city.
--TODO: implement local storage use for previously searched entries.
+- Bugfix: currently the page must be reloaded before searching for a new city.
+- TODO: implement local storage use for previously searched entries.
